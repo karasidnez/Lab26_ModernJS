@@ -26,3 +26,119 @@ h2 {
     margin-bottom: 30px;
     font-weight: 400;
 }
+.task-form {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+}
+.task-form input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.task-form input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+.task-form button {
+    padding: 12px 24px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.task-form button:hover {
+    background: #5a67d8;
+}
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+.filter-btn {
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.filter-btn:hover {
+    background: #e0e0e0;
+}
+.filter-btn.active {
+    background: #667eea;
+    color: white;
+}
+.task-list {
+    margin-top: 20px;
+}
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s;
+}
+.task-item:hover {
+    background: #e9ceef;
+    transform: translateX(5px);
+}
+.task-item.completed {
+    opacity: 0.6;
+    border-left-color: #28a745;
+}
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.task-text {
+    font-size: 16px;
+    color: #333;
+}
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+.delete-btn {
+    padding: 6px 12px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background: #c82333;
+}
+.stats {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+.stats p {
+    font-size: 16px;
+    color: #555;
+}
+.stats span {
+    font-weight: bold;
+    color: #667eea;
+}
